@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B5D0D1;
+}
+
+input {
+    outline: none;
+}
+
+.container {
+    height: 690px;
+    width: 1114px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left {
+    height: 100%;
+    width: 533px;
+    /* background-color: red; */
+}
+
+#back-btn {
+    margin-top: 24px;
+    height: 20px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    cursor: pointer;
+}
+
+#back-btn i {
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+#back-btn p {
+    font-size: 16px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #696969;
+}
+
+#first-box {
+    margin-top: 60px;
+}
+
+.input-box {
+    /* background-color: seagreen; */
+    margin-bottom: 24px;
+}
+
+#shipo {
+    width: 450px;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-box i {
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(105, 105, 105, 0.8);
+}
+
+.flexy {
+    display: flex;
+}
+
+#icon-home {
+    border: 1px solid #696969;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    margin-top: 10px;
+    height: 30px;
+    width: 40px;
+}
+
+.entry {
+    margin-right: 0;
+    width: 490px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #696969;
+    padding-left: 8px;
+    margin-top: 10px;
+}
+
+.input-box2 {
+    display: flex;
+}
+
+.entry2 {
+    height: 30px;
+    width: 184px;
+    margin-right: 22px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #696969;
+    padding-left: 8px;
+}
+
+
+
+
+#payment-method {
+    margin-top: 11px;
+    height: 84px;
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleP {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #696969;
+    margin-top: 24px;
+}
+
+.method {
+    height: 100%;
+    width: 147px;
+    border-radius: 6px;
+    border: 1px solid #696969;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.method img {
+    width: 65px;
+    height: 65px;
+}
+
+.method #payoneerimg {
+    width: 80%;
+    height: 80%;
+
+}
+
+.method #paypalimg {
+    width: 75px;
+    height: 75px;
+
+}
+
+.confirm {
+    padding: 10px 20px;
+    background-color: #857AFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+#right {
+    height: 100%;
+    width: 533px;
+    /* background-color: rgb(26, 0, 198); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    height: 650px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#image {
+    height: 308px;
+    width: 533px;
+    background-image: url("order.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#middle {
+    height: 264px;
+    width: 100%;
+}
+
+#middle h2 {
+    margin-left: 24px;
+    padding: 20px 0px;
+}
+
+.op {
+    height: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+}
+
+.item-del {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-del i {
+    color: #696969e0;
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+.op p {
+    font-size: 14px;
+    color: #1C1C1C;
+}
+
+#delivery {
+    border-top: 1px solid #696969e0;
+    padding-top: 10px;
+}
+
+#total {
+    font-weight: 600;
+    margin-top: 0px;
+    border-top: 1px solid #696969e0;
+    padding-top: 8px;
+}
+
+#bottom {
+    height: 78px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottom button {
+    padding: 10px 20px;
+    background-color: #857AFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 24px;
+
+}
+
+#bottom #coupon {
+    height: 35px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #696969;
+    padding-left: 10px;
+    margin-left: 24px;
+}

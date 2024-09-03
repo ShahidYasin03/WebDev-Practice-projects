@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="left">
+            <div id="back-btn">
+                <i class="fas fa-angle-left"></i>
+                <p>Back</p>
+            </div>
+
+            <div id="first-box" class="input-box">
+                <p class="title">Email</p>
+                <input class="entry" type="text" placeholder="email@gmail.com">
+            </div>
+
+            <div class="input-box">
+                <p class="title">Shipping Address</p>
+                <div class="flexy">
+                    <input id="shipo" class="entry" type="text" placeholder="House Number, Society, City">
+                    <div id="icon-home">
+                        <i class="fas fa-house-user"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <p class="title">Name On Card</p>
+                <input class="entry" type="text" placeholder="Your Name">
+            </div>
+
+
+            <div class="input-box2">
+                <div>
+                    <p class="title">Expiration</p>
+                    <input class="entry2" type="text" placeholder="MM/YY">
+                </div>
+
+                <div>
+                    <p class="title">CVV</p>
+                    <input class="entry2" type="text" placeholder="***">
+                </div>
+
+            </div>
+
+            <p class="titleP">Payment Method</p>
+            <div id="payment-method">
+                <div class="method">
+                    <img src="master.png" alt="">
+                </div>
+                <div class="method">
+                    <img id="paypalimg" src="paypal.png" alt="">
+                </div>
+                <div class="method">
+                    <img id="payoneerimg" src="payoneer.png" alt="">
+                </div>
+            </div>
+            <button class="confirm">
+                Confirm Payment $600
+            </button>
+        </div>
+
+        <div id="right">
+            <div id="card">
+                <div id="image">
+                </div>
+
+                <div id="middle">
+
+                    <h2>Order Summary</h2>
+                    <div class="op">
+                        <p>x1 Mouse Pad</p>
+                        <div class="item-del">
+                            <p>$150</p>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="op">
+                        <p>1x Laptop Cover</p>
+                        <div class="item-del">
+                            <p>$50</p>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="op">
+                        <p>x2 Emoji Sticker Pack</p>
+                        <div class="item-del">
+                            <p>$10</p>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="op" id="delivery">
+                        <p>Delivery</p>
+                        <p>$20</p>
+                    </div>
+                    <div class="op">
+                        <p>Discount</p>
+                        <p>$20</p>
+                    </div>
+                    <div class="op" id="total">
+                        <p>Total</p>
+                        <p>$210</p>
+                    </div>
+                </div>
+                <div id="bottom">
+                    <input type="text" name="" placeholder="Coupon" id="coupon">
+                    <button>Apply</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
