@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    font-family: "Montserrat";
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    height: 100%;
+    width: 360px;
+    background-color: rgb(18, 18, 18);
+    text-align: center;
+}
+
+#logo {
+    width: 100%;
+    height: 240px;
+    background-color: rgb(18, 18, 18);
+
+}
+
+#logo p {
+    font-size: 1.2rem;
+    margin-top: 50px;
+    color:#EA6C18;
+}
+
+
+#logo #icon {
+    height: 160px;
+    width: 160px;
+    background-image: url('ninja-logo-template-gradient.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#data {
+    width: 100%;
+    height: 285px;
+    background-color: rgb(18, 18, 18);
+
+    text-align: left;
+}
+
+#data p {
+    font-size: 0.9rem;
+    color: white;
+    margin-left: 25px;
+    margin-bottom: 4px;
+}
+#data input {
+    width: 300px;
+    margin-left: 25px;
+    height: 36px;
+    padding-left: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+#sign button{
+    padding: 8px 14px;
+    background-color: rgb(18, 18, 18);
+    color: #EA6C18;
+    border: 1px solid #EA6C18;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+
+}
+
+#Or{
+    font-size: 1.4rem;
+    color: #EA6C18;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cont p{
+    font-size: 0.9rem;
+    color: white;
+}
+
+.log {
+    height: 30px;
+    width: 30px;
+    background-image: url('g.png');
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+
+.log1 {
+    height: 30px;
+    width: 30px;
+    background-image: url('D.png');
+    background-size: cover;
+    margin-left: 8px;
+}
