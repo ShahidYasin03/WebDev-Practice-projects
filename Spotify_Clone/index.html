@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav-div">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fas fa-house-user"></i>
+                    <p>Home</p>
+                </div>
+                <div class="nav-option">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <p>Search</p>
+                </div>
+            </div>
+            <div class="library-div">
+                <div class="option">
+                    <div class="lib-option">
+                        <div id="lib-icon">
+                            <i class="fas fa-boxes-packing"></i>
+                            <p>Your Library</p>
+                        </div>
+                        <div id="lib-icons">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="create-playlist">
+                    <p class="heading">Create your first palylist</p>
+                    <p class="info">It's easy we'll help you</p>
+                    <button>Create Playlist</button>
+                </div>
+
+                <div class="create-playlist">
+                    <p class="heading">Shuffle Recent played songs</p>
+                    <p class="info">Find the best music according to your taste.</p>
+                    <button>Shuffle Play</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="main-content">
+            <div class="navbar">
+                <div class="left-nav">
+                    <div class="nav-arrow">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="nav-arrow">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="right-nav">
+                    <button class="hide">Explore Premium</button>
+                    <button id="install-btn"><i class="fas fa-download"></i> Install App</button>
+                    <div id="user-btn"><i class="fas fa-user"></i></div>
+                </div>
+            </div>
+
+            <h2>Featured Songs</h2>
+            <div class="cards-container">
+                <div class="cards">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Listen to these song please..</p>
+                </div>
+            </div>
+
+            <h2>Trending Top</h2>
+            <div class="cards-container">
+                <div class="cards">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Listen to this song please..</p>
+                </div>
+                <div class="cards">
+                    <img src="assets/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Mere Pass Tum Ho</p>
+                    <p class="card-info">Listen to this song please..</p>
+                </div>
+                <div class="cards">
+                    <img src="assets/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">After Ego Naa Ready</p>
+                    <p class="card-info">Listen to this song please..</p>
+                </div>
+                <div class="cards">
+                    <img src="assets/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Listen to this song please..</p>
+                </div>
+            </div>
+
+            <h2>Global Beats</h2>
+            <div class="cards-container">
+                <div class="cards">
+                    <img src="assets/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Listen and explore songs..</p>
+                </div>
+                <div class="cards">
+                    <img src="assets/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top Songs India</p>
+                    <p class="card-info">Listen and explore songs..</p>
+                </div>
+                <div class="cards">
+                    <img src="assets/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top 50 - USA</p>
+                    <p class="card-info">Listen and explore songs..</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+
+        </div>
+
+
+        <div class="music-player">
+            <div class="player-left">
+                <div class="song-img">
+                    <img src="assets/card4img.jpeg" alt="">
+                </div>
+                <div class="song-name">
+                     <p id="sname">Daylight</p>
+                     <p id="aname">Travis Scott</p>
+                </div>
+                <div class = "song-icon">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-rectangle-list"></i>
+                </div>
+
+
+            </div>
+            <div class="player-middle">
+                <div class="align-controls">
+                    <div class="controls">
+                        <i class="fas fa-backward"></i>
+                        <i class="fas fa-backward-step"></i>
+
+                        <i id="playBtn" class="fas fa-play"></i>
+
+                        <i class="fas fa-forward-step"></i>
+                        <i class="fas fa-forward"></i>
+                    </div>
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="player-right">
+                <div class="right-icon"> <i class="fas fa-music"></i></div>
+                <div class="right-icon"> <i class="fas fa-sliders"></i></div>
+                <div class="right-icon"> <i class="fas fa-microphone"></i></div>
+                <div id="vlume" class="right-icon"> <i class="fas fa-volume-high"></i></div>
+                <div id="volume-range">  <input type="range"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
