@@ -1,4 +1,3 @@
 # Gaze3D
 A 3D interactive website where the object’s face follows your cursor in real-time.
-
-![Screenshot](./assets/screenshot.png)
+![image](https://github.com/user-attachments/assets/bcdd85ab-0133-407f-85c8-9394e2c53398)
