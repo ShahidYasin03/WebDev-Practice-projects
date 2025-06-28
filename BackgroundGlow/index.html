@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Glow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body1"></div>
+    <div class="body2"></div>
+    <div class="blury"></div>
+    <div class="container">
+      <header>
+        <div>
+          <h1 class="logo" style="cursor: pointer;">GLOWING</h1>
+        </div>
+
+        <nav class="nav-container">
+          <button class="nav-btn">Blur</button>
+          <div class="divider"></div>
+          <button class="nav-btn active">Follow</button>
+          <div class="divider"></div>
+          <button class="nav-btn">Glow</button>
+        </nav>
+
+        <button class="btn-resume">Button</button>
+      </header>
+    </div>
+  </body>
+  <script>
+    const blury = document.querySelector(".blury");
+
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+
+    document.addEventListener("mousemove", (e) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+    });
+
+    function animate() {
+      // Lerp towards target (adjust 0.1 for more/less delay)
+      currentX += (targetX - currentX) * 0.07;
+      currentY += (targetY - currentY) * 0.07;
+
+      blury.style.left = `${currentX}px`;
+      blury.style.top = `${currentY}px`;
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</html>
