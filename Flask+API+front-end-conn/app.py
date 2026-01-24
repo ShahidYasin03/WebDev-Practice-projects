@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 CORS(app) 
 
-
 with open('config.json', 'r') as file:
     config = json.load(file)
 
